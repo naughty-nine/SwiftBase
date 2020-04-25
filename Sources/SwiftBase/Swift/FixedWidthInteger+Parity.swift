@@ -2,6 +2,7 @@
 import Foundation
 
 
+/// Represents the parity of an integer type.
 public enum Parity {
   case even, odd
 }
@@ -13,5 +14,6 @@ public extension FixedWidthInteger {
 
   var isOdd: Bool { !isEven }
 
+  /// Parity of self.
   var parity: Parity { isEven ? .even : .odd }
 }

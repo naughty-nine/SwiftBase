@@ -2,12 +2,21 @@
 import Foundation
 
 
+/// Property wrapper storing the  wrapped value to `UserDefaults`
+///
+/// Can handle all  (optional)`Codable`
+///
+/// - Important: Stores all values as `Data`.
 @propertyWrapper
 public struct UserDefaultsStore<T: Codable> {
 
   private let key: String
   private let defaultValue: T
 
+  /// Default initializer
+  /// - Parameters:
+  ///   - key: `UserDefaults` key
+  ///   - defaultValue: Default value if the `key` doesn't exist
   public init(key: String, defaultValue: T) {
     self.key = key
     self.defaultValue = defaultValue
