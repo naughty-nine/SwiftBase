@@ -7,7 +7,7 @@ public enum Parity {
 }
 
 
-public extension IntegerLiteralType {
+public extension FixedWidthInteger {
 
   var isEven: Bool { self % 2 == 0 }
 

@@ -30,4 +30,14 @@ final class IntergerLiteralType_ParityTests: XCTestCase {
       XCTAssertFalse($0.isOdd, "\($0) is expected NOT to be odd")
     }
   }
+
+  func testIntTypes() {
+    let int8: Int8 = 4
+    let int16: Int16 = Int16(Int8.max) + 3
+    let int32: Int32 = Int32(Int16.max) + 5
+
+    XCTAssertTrue(int8.isEven)
+    XCTAssertTrue(int16.isEven)
+    XCTAssertTrue(int32.isEven)
+  }
 }
