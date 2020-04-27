@@ -3,6 +3,7 @@ import XCTest
 
 
 final class UserDefaultsStoreTests: XCTestCase {
+  let defaults = UserDefaults.standard
 
   @UserDefaultsStore(key: "TestBool", defaultValue: false)
     var testBool: Bool
@@ -10,12 +11,12 @@ final class UserDefaultsStoreTests: XCTestCase {
     var testString: String
   @UserDefaultsStore(key: "TestInt", defaultValue: nil)
     var testInt: Int?
+  @UserDefaultsStore(key: "TestIntNotNil", defaultValue: 9)
+    var testIntNotNil: Int
   @UserDefaultsStore(key: "TestData", defaultValue: nil)
     var testData: Data?
 
-
   override func setUp() {
-    let defaults = UserDefaults.standard
     let dict = UserDefaults.standard.dictionaryRepresentation()
     dict.keys.forEach {
       if $0.starts(with: "Test") {
@@ -57,5 +58,13 @@ final class UserDefaultsStoreTests: XCTestCase {
     let string = String(data: storedData, encoding: .utf8)!
     XCTAssertEqual(string, "someString")
     XCTAssertEqual(_testData.wrappedValue, data!)
+  }
+
+  func test_returnsDefaultValue_when_notDecodable() {
+    let stringValue: String = "blah"
+    let data = try! JSONEncoder().encode(stringValue)
+    defaults.set(data, forKey: "TestIntNotNil")
+
+    XCTAssertEqual(testIntNotNil, 9)
   }
 }

@@ -27,8 +27,10 @@ public struct UserDefaultsStore<T: Codable> {
       guard let data = UserDefaults.standard.object(forKey: key) as? Data else {
         return defaultValue
       }
-      let value = try? JSONDecoder().decode(T.self, from: data)
-      return value ?? defaultValue
+      guard let value = try? JSONDecoder().decode(T.self, from: data) else {
+        return defaultValue
+      }
+      return value
     }
     set {
       let data = try? JSONEncoder().encode(newValue)

@@ -13,8 +13,7 @@ extension View {
                                   content: (Self) -> Content) -> some View {
     if conditional {
       return AnyView(content(self))
-    } else {
-      return AnyView(self)
     }
+    return AnyView(self)
   }
 }
