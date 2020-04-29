@@ -5,7 +5,7 @@ import CoreData
 extension NSManagedObjectContext {
 
   /// Save the context if changed
-  func saveIfNeededThrowing() throws {
+  public func saveIfNeededThrowing() throws {
     guard hasChanges else { return }
     do {
       try save()
@@ -17,7 +17,7 @@ extension NSManagedObjectContext {
   }
 
   /// Save the context if changed handling any error by logging
-  func saveIfNeeded() {
+  public func saveIfNeeded() {
     try? saveIfNeededThrowing()
   }
 }

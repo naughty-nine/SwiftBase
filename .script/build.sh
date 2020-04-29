@@ -1,6 +1,6 @@
 
-swift package generate-xcodeproj \
-	--enable-code-coverage 
+# swift package generate-xcodeproj \
+# 	--enable-code-coverage 
 
 xcodebuild test \
   -scheme SwiftBase-Package \

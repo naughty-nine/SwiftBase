@@ -4,6 +4,6 @@
         <attribute name="testName" attributeType="String"/>
     </entity>
     <elements>
-        <element name="TestObject" positionX="-54" positionY="-9" width="128" height="58"/>
+        <element name="TestObject" positionX="-45" positionY="0" width="128" height="58"/>
     </elements>
 </model>
