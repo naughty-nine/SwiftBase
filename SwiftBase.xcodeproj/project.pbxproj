@@ -21,7 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		D377111B245A152400459CA4 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D3771119245A152400459CA4 /* Model.xcdatamodeld */; };
+		D389809D245CB22B00A6E2CB /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D389809A245CB20E00A6E2CB /* Model.xcdatamodeld */; };
 		OBJ_115 /* NSManagedObjectContext+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* NSManagedObjectContext+Convenience.swift */; };
 		OBJ_116 /* CGSize+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* CGSize+Convenience.swift */; };
 		OBJ_117 /* UserDefaultsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* UserDefaultsStore.swift */; };
@@ -129,7 +129,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D377111A245A152400459CA4 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		D389809B245CB20E00A6E2CB /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		OBJ_10 /* NSManagedObjectContext+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Convenience.swift"; sourceTree = "<group>"; };
 		OBJ_100 /* ZStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZStack.swift; sourceTree = "<group>"; };
 		OBJ_101 /* ViewHosting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHosting.swift; sourceTree = "<group>"; };
@@ -288,8 +288,8 @@
 		OBJ_20 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				D389809A245CB20E00A6E2CB /* Model.xcdatamodeld */,
 				OBJ_21 /* SwiftBaseTests */,
-				D3771119245A152400459CA4 /* Model.xcdatamodeld */,
 			);
 			name = Tests;
 			sourceTree = SOURCE_ROOT;
@@ -397,7 +397,7 @@
 			path = Modifiers;
 			sourceTree = "<group>";
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -408,7 +408,6 @@
 				OBJ_108 /* README.md */,
 				OBJ_109 /* SwiftBase.framework.coverage.txt */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_51 /* SwiftUI */ = {
@@ -593,7 +592,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_103 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -637,7 +636,7 @@
 				OBJ_138 /* NSManagedObjectContext+ConvenienceTests.swift in Sources */,
 				OBJ_139 /* CGSize+ConvenienceTests.swift in Sources */,
 				OBJ_140 /* UserDefaultsStoreTests.swift in Sources */,
-				D377111B245A152400459CA4 /* Model.xcdatamodeld in Sources */,
+				D389809D245CB22B00A6E2CB /* Model.xcdatamodeld in Sources */,
 				OBJ_141 /* FixedWidthInteger+ParityTests.swift in Sources */,
 				OBJ_142 /* LazyViewTests.swift in Sources */,
 				OBJ_143 /* View+IfTests.swift in Sources */,
@@ -1074,13 +1073,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		D3771119245A152400459CA4 /* Model.xcdatamodeld */ = {
+		D389809A245CB20E00A6E2CB /* Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				D377111A245A152400459CA4 /* Model.xcdatamodel */,
+				D389809B245CB20E00A6E2CB /* Model.xcdatamodel */,
 			);
-			currentVersion = D377111A245A152400459CA4 /* Model.xcdatamodel */;
-			path = Model.xcdatamodeld;
+			currentVersion = D389809B245CB20E00A6E2CB /* Model.xcdatamodel */;
+			name = Model.xcdatamodeld;
+			path = Tests/Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
