@@ -22,6 +22,8 @@
 
 /* Begin PBXBuildFile section */
 		D389809D245CB22B00A6E2CB /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D389809A245CB20E00A6E2CB /* Model.xcdatamodeld */; };
+		D389809F245CF63D00A6E2CB /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = D389809E245CF63D00A6E2CB /* Log.swift */; };
+		D38980A2245CFBFA00A6E2CB /* LogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38980A0245CFBD300A6E2CB /* LogTests.swift */; };
 		OBJ_115 /* NSManagedObjectContext+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* NSManagedObjectContext+Convenience.swift */; };
 		OBJ_116 /* CGSize+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* CGSize+Convenience.swift */; };
 		OBJ_117 /* UserDefaultsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* UserDefaultsStore.swift */; };
@@ -130,6 +132,8 @@
 
 /* Begin PBXFileReference section */
 		D389809B245CB20E00A6E2CB /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		D389809E245CF63D00A6E2CB /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		D38980A0245CFBD300A6E2CB /* LogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogTests.swift; sourceTree = "<group>"; };
 		OBJ_10 /* NSManagedObjectContext+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Convenience.swift"; sourceTree = "<group>"; };
 		OBJ_100 /* ZStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZStack.swift; sourceTree = "<group>"; };
 		OBJ_101 /* ViewHosting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHosting.swift; sourceTree = "<group>"; };
@@ -288,8 +292,8 @@
 		OBJ_20 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				D389809A245CB20E00A6E2CB /* Model.xcdatamodeld */,
 				OBJ_21 /* SwiftBaseTests */,
+				D389809A245CB20E00A6E2CB /* Model.xcdatamodeld */,
 			);
 			name = Tests;
 			sourceTree = SOURCE_ROOT;
@@ -302,6 +306,7 @@
 				OBJ_26 /* Foundation */,
 				OBJ_28 /* Swift */,
 				OBJ_30 /* SwiftUI */,
+				D38980A0245CFBD300A6E2CB /* LogTests.swift */,
 				OBJ_33 /* XCTestManifests.swift */,
 			);
 			name = SwiftBaseTests;
@@ -482,6 +487,7 @@
 				OBJ_13 /* Foundation */,
 				OBJ_15 /* Swift */,
 				OBJ_17 /* SwiftUI */,
+				D389809E245CF63D00A6E2CB /* Log.swift */,
 			);
 			name = SwiftBase;
 			path = Sources/SwiftBase;
@@ -612,6 +618,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				D389809F245CF63D00A6E2CB /* Log.swift in Sources */,
 				OBJ_115 /* NSManagedObjectContext+Convenience.swift in Sources */,
 				OBJ_116 /* CGSize+Convenience.swift in Sources */,
 				OBJ_117 /* UserDefaultsStore.swift in Sources */,
@@ -635,6 +642,7 @@
 			files = (
 				OBJ_138 /* NSManagedObjectContext+ConvenienceTests.swift in Sources */,
 				OBJ_139 /* CGSize+ConvenienceTests.swift in Sources */,
+				D38980A2245CFBFA00A6E2CB /* LogTests.swift in Sources */,
 				OBJ_140 /* UserDefaultsStoreTests.swift in Sources */,
 				D389809D245CB22B00A6E2CB /* Model.xcdatamodeld in Sources */,
 				OBJ_141 /* FixedWidthInteger+ParityTests.swift in Sources */,

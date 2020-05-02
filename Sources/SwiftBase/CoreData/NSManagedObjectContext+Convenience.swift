@@ -10,8 +10,7 @@ extension NSManagedObjectContext {
     do {
       try save()
     } catch(let error) {
-      print(String(format: "ERROR: %@.%@: %@",
-                   "\(type(of: self))", #function, error.localizedDescription))
+      llog(.error, "\(type(of: self)).\(#function): \(error.localizedDescription)")
       throw error
     }
   }
