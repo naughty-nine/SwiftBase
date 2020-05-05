@@ -2,11 +2,11 @@
 import Foundation
 
 
-public func llog(_ message: String) {
+public func llog(_ message: Any) {
   Log.default.log(level: .debug, message: message)
 }
 
-public func llog(_ level: Log.Level, _ message: String) {
+public func llog(_ level: Log.Level, _ message: Any) {
   Log.default.log(level: level, message: message)
 }
 
@@ -16,10 +16,10 @@ public struct Log {
   public static var level = Level.error
   public static let `default` = Log()
 
-  func log(level: Level, message: String) {
+  func log(level: Level, message: Any) {
     #if DEBUG
     if level >= Self.level {
-      print(String(format: "%@: %@", level.string, message))
+      print(String(format: "%@: %@", level.string, "\(message)"))
     }
     #endif
   }
