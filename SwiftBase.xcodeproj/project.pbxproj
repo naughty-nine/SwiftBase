@@ -24,6 +24,8 @@
 		D389809D245CB22B00A6E2CB /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D389809A245CB20E00A6E2CB /* Model.xcdatamodeld */; };
 		D389809F245CF63D00A6E2CB /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = D389809E245CF63D00A6E2CB /* Log.swift */; };
 		D38980A2245CFBFA00A6E2CB /* LogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38980A0245CFBD300A6E2CB /* LogTests.swift */; };
+		D3D19379246C780B00CC3EE0 /* Bundle+Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D19378246C780B00CC3EE0 /* Bundle+Version.swift */; };
+		D3D1937B246C7A1C00CC3EE0 /* Bundle+VersionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D1937A246C7A1C00CC3EE0 /* Bundle+VersionTests.swift */; };
 		OBJ_115 /* NSManagedObjectContext+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* NSManagedObjectContext+Convenience.swift */; };
 		OBJ_116 /* CGSize+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* CGSize+Convenience.swift */; };
 		OBJ_117 /* UserDefaultsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* UserDefaultsStore.swift */; };
@@ -134,6 +136,8 @@
 		D389809B245CB20E00A6E2CB /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		D389809E245CF63D00A6E2CB /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		D38980A0245CFBD300A6E2CB /* LogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogTests.swift; sourceTree = "<group>"; };
+		D3D19378246C780B00CC3EE0 /* Bundle+Version.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Version.swift"; sourceTree = "<group>"; };
+		D3D1937A246C7A1C00CC3EE0 /* Bundle+VersionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+VersionTests.swift"; sourceTree = "<group>"; };
 		OBJ_10 /* NSManagedObjectContext+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Convenience.swift"; sourceTree = "<group>"; };
 		OBJ_100 /* ZStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZStack.swift; sourceTree = "<group>"; };
 		OBJ_101 /* ViewHosting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHosting.swift; sourceTree = "<group>"; };
@@ -267,6 +271,7 @@
 		OBJ_13 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				D3D19378246C780B00CC3EE0 /* Bundle+Version.swift */,
 				OBJ_14 /* UserDefaultsStore.swift */,
 			);
 			path = Foundation;
@@ -332,6 +337,7 @@
 		OBJ_26 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				D3D1937A246C7A1C00CC3EE0 /* Bundle+VersionTests.swift */,
 				OBJ_27 /* UserDefaultsStoreTests.swift */,
 			);
 			path = Foundation;
@@ -623,6 +629,7 @@
 				OBJ_116 /* CGSize+Convenience.swift in Sources */,
 				OBJ_117 /* UserDefaultsStore.swift in Sources */,
 				OBJ_118 /* FixedWidthInteger+Parity.swift in Sources */,
+				D3D19379246C780B00CC3EE0 /* Bundle+Version.swift in Sources */,
 				OBJ_119 /* LazyView.swift in Sources */,
 				OBJ_120 /* View+If.swift in Sources */,
 			);
@@ -646,6 +653,7 @@
 				OBJ_140 /* UserDefaultsStoreTests.swift in Sources */,
 				D389809D245CB22B00A6E2CB /* Model.xcdatamodeld in Sources */,
 				OBJ_141 /* FixedWidthInteger+ParityTests.swift in Sources */,
+				D3D1937B246C7A1C00CC3EE0 /* Bundle+VersionTests.swift in Sources */,
 				OBJ_142 /* LazyViewTests.swift in Sources */,
 				OBJ_143 /* View+IfTests.swift in Sources */,
 				OBJ_144 /* XCTestManifests.swift in Sources */,
@@ -967,6 +975,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 13;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_NS_ASSERTIONS = YES;
@@ -985,6 +994,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				USE_HEADERMAP = NO;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -994,6 +1004,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 13;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_OPTIMIZATION_LEVEL = s;
@@ -1009,6 +1020,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				USE_HEADERMAP = NO;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
